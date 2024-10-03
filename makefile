@@ -26,5 +26,5 @@ update_srcinfo:
 
 .PHONY: clean
 clean:
-	@git clean -fdX
+	@git clean -ffdx
 	@echo "Cleanup complete."
