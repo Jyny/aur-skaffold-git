@@ -1,17 +1,13 @@
+VERSION_FILE := VERSION
+VERSION := $(shell cat $(VERSION_FILE))
+
 .PHONY: all
-all: download checksums update_pkgbuild test_makepkg update_srcinfo clean
-
-.PHONY: download
-download:
-# TODO
-
-.PHONY: checksums
-checksums:
-# TODO
+all: update_pkgbuild test_makepkg update_srcinfo clean
 
 .PHONY: update_pkgbuild
 update_pkgbuild:
-# TODO
+# TODO: update pkgver in PKGBUILD
+# TODO: update sha256sums in PKGBUILD
 
 .PHONY: test_makepkg
 test_makepkg:
